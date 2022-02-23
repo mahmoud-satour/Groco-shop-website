@@ -1,0 +1,475 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+:root {
+    --orrange: #ff7800;
+    --dark: #130f40;
+    --light: #666;
+}
+
+/* start all buttons style */
+
+.btn {
+    border: 2px solid var(--dark);
+}
+
+.btn:Hover {
+    border: 2px solid var(--dark);
+    background-color: var(--orrange);
+    color: #fff;
+    transition: all .3s linear;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+/* end all button style */
+
+/* start header section style */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 555555;
+}
+
+nav {
+    background: #fff!important;
+}
+
+header nav  i {
+    color: var(--orrange);
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+header nav .navbar-brand {
+    color: var(--dark)!important;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header nav .nav-link {
+    color: var(--dark)!important;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 5px;
+
+}
+
+header nav .nav-link:hover {
+    color: var(--orrange)!important;
+}
+
+
+
+/* end header section style */
+
+/* start home section style */
+
+.home {
+    background-image: url('../image/banner-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    margin: 70px 0px;
+    background-color: transparent!important;
+}
+
+.jumbotron h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--dark);
+    margin-top: 50px;
+}
+
+.jumbotron h1 span {
+    color: var(--orrange);
+}
+
+.jumbotron p {
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+
+/* end home section style */
+
+/* start features section style */
+
+.features {
+    margin-bottom: 70px;
+}
+
+.features .row {
+    margin-top: 40px;
+}
+
+.features h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.features h2 span {
+    color: var(--orrange);
+}
+
+.features .box {
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.features .box .image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.features .box .image img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.features .box h2 {
+
+    text-align: center;
+    color: var(--dark);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.features .box p {
+    text-align: center;
+    color: var(--light);
+}
+
+.features .box a {
+    display: block;
+    margin: auto;
+    width: 9rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* end features section style */
+
+/* start products section style */
+
+.products {
+    margin-bottom: 70px!important;
+}
+
+.products h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dark);
+    margin: bottom 40px!important;
+}
+
+.products h2 span {
+    color: var(--orrange);
+}
+
+.products .box {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #fff!important;
+}
+
+.products .box h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.products .box p {
+    color: var(--light);
+    font-size: 15px;
+}
+
+.products .box a {
+    margin-bottom: 30px;
+}
+
+/* end products section style */
+
+/* start categories section style */
+
+.categories {
+
+}
+
+.categories h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+}
+
+.categories h2 span {
+    color: var(--orrange);
+}
+
+.categories .box {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-color: #fff!important;
+}
+
+.categories .box h3 {
+    color: var(--dark);
+}
+
+.categories .box p {
+    color: var(--light);
+}
+
+.categories .box a {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* end categories section style */
+
+/* start review section style */
+
+.review h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+}
+
+.review h2 span {
+    color: var(--orrange);
+}
+
+.review .box {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.review .box image {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.review img {
+    border-radius: 50%!important;
+    width: 50%!important;
+    margin: 30px 0px;
+}
+
+.review .box:hover img {
+    transform: rotate(360deg);
+}
+
+.review p {
+    color: var(--light);
+}
+
+.review h4 {
+    color: var(--dark);
+}
+
+.review .stars {
+    color: var(--orrange);
+    margin-bottom: 20px;
+}
+
+/* start review section style */
+
+/* start blog section style */
+
+.blog h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+}
+
+.blog h2 span {
+    color: var(--orrange);
+}
+
+.blog .row {
+    margin-top: 40px;
+}
+
+.blog .box {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+.blog .box .image {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+.blog .box img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+}
+
+.blog .box .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    border-bottom: 1px solid rgb(184, 162, 162);
+}
+
+.blog .box .info span {
+    color: var(--light);
+}
+
+.blog .box .info span i {
+    color: var(--orrange);
+}
+
+.blog .box h3 {
+    color: var(--dark);
+    margin: 5px 10px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.blog .box p {
+    color: var(--light);
+    margin: 5px 10px;
+    text-align: left;
+}
+
+.blog .box a {
+    margin: 20px 10px;
+}
+
+/* end blog section style */
+
+/* start footer section style */
+
+footer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+footer .row h2 {
+    color: var(--dark);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer .row h2 i {
+    color: var(--orrange);
+}
+
+footer .row p {
+    color: var(--light);
+}
+
+footer .row .media {
+    margin: 20px 0px;
+}
+
+footer .row .media i {
+    font-size: 20px;
+    margin: 5px 10px;
+    margin-left: 0px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+footer .row .media i:hover {
+    border: 1px solid var(--orrange);
+    background-color: var(--orrange);
+    border-radius: 8px;
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+
+footer .contact div {
+    color: var(--light);
+    margin: 20px 0;
+}
+
+footer .contact div i {
+    color: var(--orrange);
+    margin-right: 10px;
+}
+
+footer .contact div:hover {
+    transform: translateX(15px);
+    transition: all .2s linear;
+}
+
+footer form label {
+    color: var(--light);
+}
+
+footer form input {
+    margin: 20px 0px;
+}
+
+footer form a {
+    margin: 20px 0px;
+}
+
+footer h6 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px!important;
+    border-top: 1px solid rgb(211, 190, 190);
+    
+}
+
+footer h6 span {
+    color: var(--orrange);
+}
+
+/* end footer section style */
+
